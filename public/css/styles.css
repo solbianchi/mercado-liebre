@@ -32,20 +32,19 @@ header nav ul {
 
 
 header .buscador .input {
-    background-color: #fff;
+    background-color: #FFF;
     border: 1px solid #000;
     color: #666;
 } 
 
 header .buscador .lupa i{
-    background-color: #fff;
-    font-size: 50px;
+    background-color: #FFF;
     border: 1px solid #000;
     color: #666;
 } 
 
 header div.burger-menu i {
-    color: #fff;
+    color: #FFF;
     background-color: #1259c3;
     font-size: 20px;
     padding: 10px;
