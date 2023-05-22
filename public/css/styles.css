@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 } 
@@ -5,6 +11,28 @@ body {
 header {
     background-color: #EAC926;
     
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.img.logo {
+    width: 50%;
+}
+
+.buscador {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
 header p {
@@ -27,8 +55,12 @@ header nav ul li {
 
 header nav ul {
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 150%;
 }
 
+  
 
 
 header .buscador .input {
@@ -65,7 +97,7 @@ header {
 }
 
 main {
-    text-align: center;
+    margin: 0 auto;
     width: 90vw;
 }
 
@@ -73,36 +105,62 @@ main section article {
     margin-bottom: 10px;
 }
 
+main section article img {
+    width: 100%;
+}
+
 .info-article {
     border-top: solid 1px #ebebeb;
     padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
 }
 
-main section article div div i {
+.precio {
+    width: 30%;
+}
+
+.descuento {
+    width: 70%;
+}
+
+main section article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
     width: 30px;
     height: 30px;
-    border: solid 1px #39b54a;
-    border-radius: 100%;
-    color:#39b54a;
-    padding-top: 16px;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 16px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
+
 
 .desc.prod {
     display: none;
 }
 
 @media (min-width: 361px) {
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .desc-prod {
         display: block;
     }
     main section article {
-        box-shadow: 0px 0px 10px #666;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        width: 45%;
     }
     header nav {
-        display: block
+        display: flex;
+        justify-content: space-between;
     }
     header div.burger-menu {
         display: none;
@@ -110,16 +168,10 @@ main section article div div i {
 }
 
 @media (min-width: 769px) {
-       
+       main section article {
+        width: 22.5%;
+       }
     
-}
-
-
-
-
-main {
-    text-align: center;
-    width: 90vw;
 }
 
 
