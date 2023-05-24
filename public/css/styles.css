@@ -141,8 +141,52 @@ main section article div i {
 }
 
 
-.desc.prod {
+.desc-prod {
     display: none;
+}
+
+#formulario-registro {
+    background-color: #ebebeb;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+
+form div {
+    margin-bottom: 10px;
+    border-radius: 5%;
+    width: 100%
+}
+
+.text-field {
+    padding: 5px;
+}
+
+.selecciones {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.botonForm {
+    width: 40%
+}
+
+
+.botonSubmit {
+    background-color: green;
+    color: #FFF;
+}
+
+.botonReset {
+    background-color: red;
+    color:#FFF
 }
 
 @media (min-width: 361px) {
