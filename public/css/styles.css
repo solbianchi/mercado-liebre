@@ -101,6 +101,13 @@ main {
     width: 90vw;
 }
 
+article {
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
+
 main section article {
     margin-bottom: 10px;
 }
@@ -138,11 +145,13 @@ main section article div i {
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all 0.3s;
 }
 
 
 .desc-prod {
     display: none;
+    transition: all 0.3s;
 }
 
 #formulario-registro {
@@ -178,6 +187,18 @@ form div {
     width: 40%
 }
 
+.botonLogin {
+    background-color:  blue;
+    color: #FFF;
+}
+
+.loginar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+     }
 
 .botonSubmit {
     background-color: green;
@@ -199,7 +220,6 @@ form div {
         display: block;
     }
     main section article {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
         width: 45%;
     }
     header nav {
@@ -215,7 +235,17 @@ form div {
        main section article {
         width: 22.5%;
        }
-    
+    header nav ul li a {
+        font-size: 18px;
+        }
+    .desc-prod {
+        display: none;
+    }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100);   
+    }
+    article:hover i {
+        transform: rotate(-90deg);
 }
 
 
