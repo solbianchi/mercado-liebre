@@ -169,8 +169,11 @@ main section article div i {
 
 form div {
     margin-bottom: 10px;
-    border-radius: 5%;
-    width: 100%
+    border-radius: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text-field {
@@ -184,10 +187,12 @@ form div {
 
 
 .botonForm {
-    width: 40%
+    width: 17.5%
 }
 
 .botonLogin {
+    display: flex;
+    justify-content: center;
     background-color:  blue;
     color: #FFF;
 }
@@ -196,8 +201,7 @@ form div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 25px;
+
      }
 
 .botonSubmit {
